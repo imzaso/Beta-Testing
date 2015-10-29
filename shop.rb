@@ -1,0 +1,139 @@
+# version = 2
+#
+def main
+vogels = {"Havik" => 200, "Adelaar" => 500, "Merel" => 100, "Parkietje" => 50}
+puts "U kunt kiezen uit de volgende vogels:"
+
+birds.each do |name|
+  print "#{name}, "
+end
+
+
+puts "Kies een vogel om te kopen? #{}vogel[n]"
+
+
+For n 1...5 do
+  puts "U heeft gekozen #vogel[index] of wilt you een andere vogel kiezen?"
+    return main
+  end
+if bird == 1
+  return "Havik"
+elsif bird == 2
+  return "Adelaar"
+elsif bird == 3
+  return "Merel"
+elsif bird == 4
+  return "Parkietje"
+else
+  return bird
+end
+end
+​
+def get_prijs_bird(bird)
+  if bird == "Havik"
+    return 20
+  elsif bird == "Adelaar"
+    return 50
+  elsif bird == "Merel"
+    return 10
+  elsif bird == "Parkietje"
+    return 5
+  end
+end
+​
+bird = main
+puts "Wat een goede keus! De #{bird} is de beste vogel die we hebben!"
+​
+prijs = get_prijs_bird bird
+puts "De prijs van een #{bird} is #{prijs}"
+​
+puts "Hoeveel #{bird}s wil je kopen?"
+aantal = gets.chomp.to_i
+totaalprijs=aantal*prijs
+puts "Uw totaalprijs is #{totaalprijs}"
+​
+def verder_shoppen
+puts "Wilt u nog meer vogels kopen? (j/n)"
+meer_vogels = gets.chomp
+  if meer_vogels == "j"
+    puts "Super, we brengen je terug naar het keuzemenu"
+    return main
+  elsif meer_vogels == "n"
+    puts "Super, dan brengen we je naar de check-out pagina."
+  else
+    puts "We hebben geen geldige input ontvangen, kies aub j of n"
+    return verder_shoppen
+  end
+end
+​
+meer_vogels = verder_shoppen
+Add Comment Collapse
+Files
+jego.besseling
+store.rb
+Open in new window  More actions
+def main
+puts "Vogel Catalogus
+----------
+1) Havik
+2) Adelaar
+3) Merel
+4) Parkietje
+​
+Vul aub het cijfer in van de vogel die u wilt kopen:"
+  bird = gets.chomp.to_i
+  if bird <1 || bird >4
+    puts "U heeft geen geldige invoer gegeven. Kies item 1, 2, 3 of 4"
+    return main
+  end
+if bird == 1
+  return "Havik"
+elsif bird == 2
+  return "Adelaar"
+elsif bird == 3
+  return "Merel"
+elsif bird == 4
+  return "Parkietje"
+else
+  return bird
+end
+end
+​
+def get_prijs_bird(bird)
+  if bird == "Havik"
+    return 20
+  elsif bird == "Adelaar"
+    return 50
+  elsif bird == "Merel"
+    return 10
+  elsif bird == "Parkietje"
+    return 5
+  end
+end
+​
+bird = main
+puts "Wat een goede keus! De #{bird} is de beste vogel die we hebben!"
+​
+prijs = get_prijs_bird bird
+puts "De prijs van een #{bird} is #{prijs}"
+​
+puts "Hoeveel #{bird}s wil je kopen?"
+aantal = gets.chomp.to_i
+totaalprijs=aantal*prijs
+puts "Uw totaalprijs is #{totaalprijs}"
+​
+def verder_shoppen
+puts "Wilt u nog meer vogels kopen? (j/n)"
+meer_vogels = gets.chomp
+  if meer_vogels == "j"
+    puts "Super, we brengen je terug naar het keuzemenu"
+    return main
+  elsif meer_vogels == "n"
+    puts "Super, dan brengen we je naar de check-out pagina."
+  else
+    puts "We hebben geen geldige input ontvangen, kies aub j of n"
+    return verder_shoppen
+  end
+end
+​
+meer_vogels = verder_shoppen

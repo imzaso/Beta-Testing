@@ -1,0 +1,5 @@
+def menu
+Puts "Birds catalog"
+a
+end
+Puts ""

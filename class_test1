@@ -1,0 +1,10 @@
+# maak een klasse voertuig
+# maak een vliegtuig een auto en een fiets en een boot
+# ze kunnen bewegen
+# ze maken een geluid
+# ze hebben een aantal wielen
+# ze hebben een maximum snelheid
+
+
+class voertuig
+end
