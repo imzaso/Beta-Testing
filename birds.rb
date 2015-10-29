@@ -1,3 +1,6 @@
+=begin
+Change #1
+=end
 class Birds
   attr_accessor = :birdname, :price
   def initialize birdname, price
