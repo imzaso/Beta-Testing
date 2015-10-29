@@ -25,7 +25,7 @@ parrot = Exotic.new "Parrot", 100
 
 
 
-birds = [Pets.new("Parkietje", 50), Prey.new("Havik", 250), Prey.new("Adelaar", 500), Exotic.new("Parrot", 100)]
+birds = [Pets.new("Parkietje", 500), Prey.new("Havik", 250), Prey.new("Adelaar", 500), Exotic.new("Parrot", 100)]
 
 birds.each do |birds|
 puts birds.birdname
